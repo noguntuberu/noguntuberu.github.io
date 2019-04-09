@@ -7,7 +7,7 @@
     "verbose": true
   },
   "scripts": {
-    "test": "jest --watch --passWithNoTests",
+    "test": "jest --watchAll --passWithNoTests",
     "start": "npm run build",
     "build": "webpack -d && webpack-dev-server --content-base src/ --inline --hot --port 3000"
   },
