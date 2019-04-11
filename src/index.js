@@ -1,5 +1,6 @@
 import '@babel/polyfill';
-import Header from './components/header/index';
+import 'bootstrap/dist/css/bootstrap.css';
+import './index.css';
 import Landing from './components/landing/index';
 import Work from './components/work/index';
 import Contact from './components/contact/index.js';
@@ -7,22 +8,26 @@ import Footer from './components/footer/index.js';
 import FloatingMenu from './components/floating-btn/index';
 
 //
-const React = require('react'),
-      ReactDOM = require('react-dom');
+const React = require('react');
+const ReactDOM = require('react-dom');
 
 //
 class AppComponent extends React.Component {
     render() {
         return(
             <div>
-                <Header />
-                <Landing />
-                <div>
-                    <Work />
-                    <Contact />
+                <div className="m-fixed">
+                    
                 </div>
-                <FloatingMenu />
-                <Footer />
+                <div className="m-scrollable">
+                    <Landing />
+                    <div>
+                        <Work />
+                        <Contact />
+                    </div>
+                    <FloatingMenu />
+                    <Footer />
+                </div>
             </div>
         );
     }

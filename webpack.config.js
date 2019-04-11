@@ -25,15 +25,15 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             },
             { // Load Images
-                test: /\.(png|jpg|jpeg|gif|svg)$/,
+                test: /\.(png|jpg|jpeg|gif|svg)$/i,
                 use: [
                     {
                         loader: 'url-loader',
                         options: {
-                            limit: 10000
+                            limit: 10000,
+                            fallback: 'file-loader'
                         }
-                    },
-                    'file-loader'
+                    }
                 ]
             }
         ]
