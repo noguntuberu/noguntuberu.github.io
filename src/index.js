@@ -11,6 +11,8 @@ import FloatingMenu from './components/floating-btn/index';
 const React = require('react');
 const ReactDOM = require('react-dom');
 
+import $ from './assets/js/jquery-3';
+
 //
 class AppComponent extends React.Component {
     render() {
