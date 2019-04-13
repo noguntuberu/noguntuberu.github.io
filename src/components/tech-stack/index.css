@@ -1,0 +1,21 @@
+/** */
+.tech-stack {
+    min-height: 70px;
+    padding: 15px;
+
+    background: rgb(228, 228, 228)
+}
+
+@media screen and (min-width: 767px) {
+    .tech-stack {
+        min-height: 100px;
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .tech-stack {
+        min-height: 150px;
+        padding: 20px 100px;
+    }
+}
