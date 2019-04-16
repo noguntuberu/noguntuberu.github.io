@@ -2,7 +2,7 @@
 .contact-section {
     height: auto;
     padding: 30px 15px;
-    background: rgb(133, 39, 86);
+    background: rgb(34, 71, 114);
 }
 
 .contact-message {
@@ -41,6 +41,9 @@ textarea {
 input[type='submit'] {
     padding: 10px;
     background: gold;
+    color: rgb(34, 71, 114);
+
+    font-weight: bold;
 }
 
 /**
