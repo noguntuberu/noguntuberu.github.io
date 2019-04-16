@@ -137,7 +137,7 @@ class LandingComponent extends React.Component {
                     typeWriterIsDone: true
                 })
             }
-        }, 500);
+        }, 200);
     }
 
     render() {

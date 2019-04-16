@@ -1,10 +1,24 @@
 //
 const React = require('react');
 import './index.css';
+import InputValidator from '../../validator';
 
 //
 
 class ContactFormComponent extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    componentDidMount() {
+        let submitBtn = document.forms.contact.submit;
+        submitBtn.addEventListener('click', () => {
+
+        });
+    }
+
+    
+
     render() {
         return(
             <div className="contact-form-wrapper">
@@ -22,7 +36,7 @@ class ContactFormComponent extends React.Component {
                         <textarea name="message"></textarea>
                     </div>
                     <div className="form-group">
-                        <input type="submit" name="submmit" value="SEND MESSAGE"/>
+                        <input type="submit" name="submit" value="SEND MESSAGE"/>
                     </div>
                 </form>
             </div>
