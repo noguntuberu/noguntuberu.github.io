@@ -1,7 +1,9 @@
 //
 const React = require('react');
 import './index.css';
-import InputValidator from '../../validator';
+import InputValidator from '../../assets/js/validator';
+import MyEmail from '../../assets/js/email';
+import $ from '../../assets/js/jquery-3';
 
 //
 
@@ -9,6 +11,7 @@ class ContactFormComponent extends React.Component {
     constructor(props) {
         super(props);
         this.inputValidator = new InputValidator();
+        this.myEmail = new MyEmail();
         this.state = {
             nameIsValid : false,
             emailIsValid : false,
@@ -58,10 +61,17 @@ class ContactFormComponent extends React.Component {
             }
         });
 
-        //
+        // Handle Submit Button
         this.submitBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            console.log('clicked');
+            this.myEmail.prepare(this.fullname.value, this.email.value, this.message.value);
+            Email.send(this.myEmail.getDetails()).then(response => {
+                if(response == "OK") {
+                    this.displayFromMessage("Your message has been sent");
+                } else {
+                    this.displayFromMessage("Unable to send message. Please, try again");
+                }
+            })
         });
     }
 
@@ -74,11 +84,18 @@ class ContactFormComponent extends React.Component {
         }
     }
     
+    displayFromMessage(message) {
+        $('#form-message').html(message)
+                          .slideDown()
+                          .delay(2000)
+                          .slideUp(500, () => $('#form-message').html(''));
+    }
 
     render() {
         return(
             <div className="contact-form-wrapper">
-                <form name="contact">
+                <form name="contact" method="post">
+                    <div id="form-message"></div>
                     <div className="form-group">
                         <label>Full Name:</label>
                         <input type="text" name="fullname"/>

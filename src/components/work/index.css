@@ -22,8 +22,7 @@
     height: 250px;
     margin-bottom: 10px;
 
-    background: #efefef;
-    color: white
+    background: #ffffff;
 }
 
 .work-item-veil {
@@ -46,6 +45,10 @@
     opacity: 0;
 }
 
+.work-item-info h3 {
+    color: white;
+}
+
 .work-item-info a {
     display: inline-block;
 
@@ -54,8 +57,13 @@
     padding: 7.5px 25px;
 
     text-decoration: none;
-    background: #c2daf3;
+    background: gold;
     color: #102944;
+}
+
+.work-item-info a:first-child {
+    margin-right: 10px;
+    background: #c2daf3;
 }
 
 .work-item:last-child {
