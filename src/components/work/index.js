@@ -127,12 +127,18 @@ class WorkComponent extends React.Component {
         this.workItems = [
             {
                 name: "Anonymas", 
-                repo: this.repoBase + "anonymas.git", 
+                repo: this.repoBase + "anonymas", 
                 uri: "https://anonymas.herokuapp.com", 
                 image: "anonymas.png"
             },
             {
                 name: "Gladepay", 
+                repo: "https://gitlab.com/gladepay-apis/gladepay-pretashop", 
+                uri: "https://gitlab.com/gladepay-apis/gladepay-pretashop/blob/master/gladepay.zip", 
+                image: "gladepay.jpeg"
+            },
+            {
+                name: "Gladepay2", 
                 repo: "https://gitlab.com/gladepay-apis/gladepay-pretashop", 
                 uri: "https://gitlab.com/gladepay-apis/gladepay-pretashop/blob/master/gladepay.zip", 
                 image: "gladepay.jpeg"

@@ -49,7 +49,7 @@
 #firstname {
     opacity: 0;
 
-    font-size: 4.2rem;
+    font-size: 4.5rem;
     color: #163552;
 }
 
@@ -58,7 +58,8 @@
 
     float: left;
     width: auto;
-    font-size: 2.65rem;
+
+    font-size: 2.5rem;
     margin-top: -10px;
     padding: 0px 10px;
 
@@ -73,9 +74,27 @@
     margin-top: -10px;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (min-width: 321px) {
+    #firstname {
+        font-size: 4.75rem;
+    }
     #surname {
-        font-size: 2.35rem;
+        font-size: 2.65rem;
+    }
+    .landing-bio {
+        font-size: 1.20rem;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    #firstname {
+        font-size: 5.5rem;
+    }
+    #surname {
+        font-size: 3.05rem;
+    }
+    .landing-bio {
+        font-size: 1.15rem;
     }
 }
 
@@ -90,14 +109,29 @@
     }
 
     #firstname {
-        font-size: 9.0rem;
+        font-size: 9.5rem;
     }
     
     #surname {
         margin-top: -25px;
-        font-size: 5rem;
+        font-size: 5.4rem;
     }
 
+    .landing-bio {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .landing-hello {
+        font-size: 4.0rem;
+    }
+    #firstname {
+        font-size: 11.95rem;
+    }
+    #surname {
+        font-size: 6.85rem;
+    }
     .landing-bio {
         font-size: 2.5rem;
     }
@@ -122,11 +156,11 @@
     
     #surname {
         margin-top: -25px;
-        font-size: 5.rem;
+        font-size: 5.10rem;
     }
 
     .landing-bio {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 }
 
@@ -141,7 +175,7 @@
     
     #surname {
         margin-top: -40px;
-        font-size: 7.0rem;
+        font-size: 7.15rem;
     }
 
     .landing-bio {
