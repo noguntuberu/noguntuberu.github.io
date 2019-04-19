@@ -1,0 +1,50 @@
+/** */
+@import url('https://fonts.googleapis.com/css?family=Diplomata|Holtwood+One+SC|Playfair+Display|Rakkas');
+
+html {
+    font-family: 'Diplomata', sans-serif;
+}
+
+div, section, header, footer, input, textarea, h1 {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+
+    font-family: 'Playfair Display', sans-serif;
+}
+
+header, section, footer {
+    padding: 0 15px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/** */
+@media screen and (min-width: 1200px) {
+    .m-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100000000;
+
+        width: 45%;
+        height: 100vh;
+
+        background: url('./assets/images/musk.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .m-scrollable {
+        position: fixed;
+        right: 0;
+        top: 0;
+
+        width: 55%;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
