@@ -10,13 +10,20 @@
     background: #c2daf3;
 }
 
+.work-section .row {
+    margin-top: 10px;
+}
+
+.work-section .row:first-child {
+    margin-top: 0px;
+}
+
 .work-item {
     height: 250px;
     margin-bottom: 10px;
 
     background: #ffffff;
 }
-
 .work-item-veil {
     display: block;
 
@@ -71,8 +78,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-content: space-between;
-
-        margin-top: 5px;
     }
 
     .work-item {
