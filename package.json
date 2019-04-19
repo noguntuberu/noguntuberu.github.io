@@ -4,7 +4,10 @@
   "description": "My personal site",
   "main": "index.js",
   "jest": {
-    "verbose": true
+    "verbose": true,
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
+    }
   },
   "scripts": {
     "test": "jest --watchAll --passWithNoTests",
@@ -19,19 +22,12 @@
     "Freelance",
     "Freelancer",
     "Developer",
-    "Full",
-    "Stack",
-    "Developer",
+    "Full Stack",
     "Web",
-    "Developer",
     "Software",
-    "Developer",
     "JavaScript",
-    "Developer",
     "Frontend",
-    "Developer",
-    "Backend",
-    "Developer"
+    "Backend"
   ],
   "author": "Oguntuberu Nathan O.",
   "license": "ISC",
