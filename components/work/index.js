@@ -38,9 +38,10 @@ class WorkItemComponent extends React.Component {
     handleMouseOver(selector) {
         $(selector).animate({
             marginTop: '-5px',
-            marginBottom: '5px'
+            marginBottom: '15px'
         }).animate({
-            marginTop: '0px'
+            marginTop: '0px',
+            marginBottom: '10px'
         });
     }
 
