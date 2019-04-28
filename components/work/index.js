@@ -139,10 +139,10 @@ class WorkComponent extends React.Component {
                 image: "gladepay.jpeg"
             },
             {
-                name: "Gladepay2", 
-                repo: "https://gitlab.com/gladepay-apis/gladepay-pretashop", 
-                uri: "https://gitlab.com/gladepay-apis/gladepay-pretashop/blob/master/gladepay.zip", 
-                image: "gladepay.jpeg"
+                name: "Thirty-Trivia", 
+                repo: "https://github.com/noguntuberu/thirty-trivia", 
+                uri: "https://github.com/noguntuberu/thirty-trivia", 
+                image: "thirty.fw.png"
             }
         ];
         this.workItemGroup = [];
