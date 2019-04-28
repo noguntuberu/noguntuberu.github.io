@@ -1,0 +1,186 @@
+/** */
+.landing-section {
+    padding: 0;
+    min-height: 100vh;
+}
+
+.landing-image-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10000000000;
+
+    width: 100%;
+    height: 100vh;
+
+    background: url('../../assets/images/me_copy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-info-wrapper {
+    height: 100vh;
+
+    margin-top: 90vh;
+    padding: 15px;
+
+}
+
+.landing-hello{
+    font-size: 1.75rem;
+}
+
+.landing-hello span {
+    display: inline-block;
+}
+.landing-name {
+    margin: 0;
+    margin-top: -15px;
+    padding: 0;
+}
+
+.landing-name span {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    font-weight: bold;
+}
+
+#firstname {
+    opacity: 0;
+
+    font-size: 4.5rem;
+    color: #163552;
+}
+
+#surname {
+    opacity: 0;
+
+    float: left;
+    width: auto;
+
+    font-size: 2.5rem;
+    margin-top: -10px;
+    padding: 0px 10px;
+
+    text-align: center;
+    background: rgb(133, 39, 86);
+    color: #ffffff;
+}
+
+.landing-bio {
+    display: none;
+    font-size: 1.15rem;
+    margin-top: -10px;
+}
+
+@media screen and (min-width: 321px) {
+    #firstname {
+        font-size: 4.75rem;
+    }
+    #surname {
+        font-size: 2.65rem;
+    }
+    .landing-bio {
+        font-size: 1.20rem;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    #firstname {
+        font-size: 5.5rem;
+    }
+    #surname {
+        font-size: 3.05rem;
+    }
+    .landing-bio {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .landing-info-wrapper {
+        padding: 0 10%;
+    }
+    .landing-hello {
+        padding-left: 7.5px;
+        font-size: 3.0rem;
+        margin-bottom: -30px;
+    }
+
+    #firstname {
+        font-size: 9.5rem;
+    }
+    
+    #surname {
+        margin-top: -25px;
+        font-size: 5.4rem;
+    }
+
+    .landing-bio {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .landing-hello {
+        font-size: 4.0rem;
+    }
+    #firstname {
+        font-size: 11.95rem;
+    }
+    #surname {
+        font-size: 6.85rem;
+    }
+    .landing-bio {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .landing-info-wrapper {
+        margin: 0;
+        padding: 0 10%;
+    }
+    .landing-hello {
+        padding-left: 7.5px;
+        margin-bottom: -30px;
+
+        font-size: 3.0rem;
+    }
+
+    #firstname {
+        font-size: 9.0rem;
+    }
+    
+    #surname {
+        margin-top: -25px;
+        font-size: 5.10rem;
+    }
+
+    .landing-bio {
+        font-size: 2.25rem;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .landing-hello {
+        font-size: 3.5rem;
+    }
+
+    #firstname {
+        font-size: 12.5rem;
+    }
+    
+    #surname {
+        margin-top: -40px;
+        font-size: 7.15rem;
+    }
+
+    .landing-bio {
+        margin-top: 20px;
+        font-size: 2.70rem;
+    }
+}

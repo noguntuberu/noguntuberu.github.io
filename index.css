@@ -28,18 +28,18 @@ img {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 100000000;
+        /* z-index: 100000000; */
 
         width: 45%;
         height: 100vh;
 
-        background: url('./assets/images/musk.jpg');
+        background: url('./assets/images/me_copy.jpg');
         background-size: cover;
         background-position: center;
     }
 
     .m-scrollable {
-        position: fixed;
+        position: absolute;
         right: 0;
         top: 0;
 
